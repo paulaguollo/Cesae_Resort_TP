@@ -52,15 +52,23 @@ public class ClienteView {
                     break;
 
                 case 2:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 3:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 4:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 5:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 0:

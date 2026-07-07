@@ -97,12 +97,31 @@ public class AdministradorController {
     }
 
     /**
-     * Consulta o quarto com o melhor (maior) preço por semana.
+     * Consulta o quarto com o melhor (maior) preço por semana, cruzando cada
+     * quarto com a sua tipologia para obter o preço.
      *
      * @return o quarto com melhor preço/semana
      */
     public Quartos consultarQuartoMelhorPreco() {
-        return null;
+
+        Quartos quartoComMelhorPreco = null;
+        int melhorPreco = -1;
+
+        for (Quartos quartoAtual : this.quartosRepository.getListaQuartos()) {
+
+            for (Tipologia tipologiaAtual : this.tipologiaRepository.getListaTipologias()) {
+
+                if (tipologiaAtual.getId() == quartoAtual.getIdTipologia()) {
+
+                    if (tipologiaAtual.getPrecoSemana() > melhorPreco) {
+                        melhorPreco = tipologiaAtual.getPrecoSemana();
+                        quartoComMelhorPreco = quartoAtual;
+                    }
+                }
+            }
+        }
+
+        return quartoComMelhorPreco;
     }
 
     /**
@@ -113,9 +132,5 @@ public class AdministradorController {
      * @param tipoAcesso tipo de acesso (ADMIN, GESTAO ou GUIA)
      */
     public void adicionarNovoLogin(String username, String password, String tipoAcesso) {
-
-        Login novoLogin = new Login(username, password, tipoAcesso);
-        this.loginRepository.getListaLogins().add(novoLogin);
-
     }
 }

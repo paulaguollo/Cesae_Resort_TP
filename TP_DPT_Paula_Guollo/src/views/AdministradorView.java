@@ -1,6 +1,7 @@
 package views;
 
 import controllers.AdministradorController;
+import models.Quartos;
 
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -50,46 +51,53 @@ public class AdministradorView {
             switch (opcao) {
 
                 case 1:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 2:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 3:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 4:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 5:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 6:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 7:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 8:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 9:
+                    Quartos quartoMelhorPreco = this.administradorController.consultarQuartoMelhorPreco();
+                    System.out.println(quartoMelhorPreco);
                     break;
 
                 case 10:
-                    input.nextLine();
-
-                    System.out.print("Username: ");
-                    String username = input.nextLine();
-
-                    System.out.print("Password: ");
-                    String password = input.nextLine();
-
-                    System.out.print("Tipo de acesso (ADMIN, GESTAO ou GUIA): ");
-                    String tipoAcesso = input.nextLine();
-
-                    this.administradorController.adicionarNovoLogin(username, password, tipoAcesso);
-                    System.out.println("Login adicionado com sucesso.");
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 0:

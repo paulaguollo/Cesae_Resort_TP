@@ -16,7 +16,6 @@ public class RececionistaView {
 
     /**
      * Cria a view de Rececionista e instancia o respetivo controller.
-     *
      * @throws FileNotFoundException se algum dos ficheiros CSV não for encontrado
      */
     public RececionistaView() throws FileNotFoundException {
@@ -46,6 +45,8 @@ public class RececionistaView {
             switch (opcao) {
 
                 case 1:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 2:
@@ -55,12 +56,18 @@ public class RececionistaView {
                     break;
 
                 case 3:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 4:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 5:
+                    System.out.println("Nessa opção podes confirmar a assinatura da função na estrutura do projeto :)");
+                    System.out.println("Tenta a sorte e descubra qual opção está implementada haha :)");
                     break;
 
                 case 0:

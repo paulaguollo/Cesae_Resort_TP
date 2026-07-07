@@ -22,14 +22,14 @@ public class CsvReader {
         while (fileScanner.hasNextLine()) {
 
             String linha = fileScanner.nextLine();
-            String[] linhaSeparada = linha.split(";");
+            String[] linhaSeparada = linha.split(",");
 
             String idAtual = linhaSeparada[0];
             String nomeAtual = linhaSeparada[1];
             String nacionalidadeAtual = linhaSeparada[2];
             String emailAtual = linhaSeparada[3];
-            String dataNascimentoAtual = linhaSeparada[4];
-            int telemovelAtual = Integer.parseInt(linhaSeparada[5]);
+            int telemovelAtual = Integer.parseInt(linhaSeparada[4]);
+            String dataNascimentoAtual = linhaSeparada[5];
             boolean consentimentoMarketing = Boolean.parseBoolean(linhaSeparada[6]);
 
             Cliente experiencia = new Cliente(idAtual, nomeAtual, nacionalidadeAtual, emailAtual, telemovelAtual, dataNascimentoAtual, consentimentoMarketing);
@@ -52,7 +52,7 @@ public class CsvReader {
         while (fileScanner.hasNextLine()) {
 
             String linha = fileScanner.nextLine();
-            String[] linhaSeparada = linha.split(";");
+            String[] linhaSeparada = linha.split(",");
 
             String idAtual = linhaSeparada[0];
             String nomeAtual = linhaSeparada[1];
